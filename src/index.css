@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-display: 'Syne', 'Space Grotesk', sans-serif;
+
+  /* Coffee palette centered on #ae9775 */
+  --color-coffee-50:  #FAF7F2;
+  --color-coffee-100: #F0E9DE;
+  --color-coffee-200: #DDD0BC;
+  --color-coffee-300: #CDB89B;
+  --color-coffee-400: #BE9F7E;
+  --color-coffee-500: #ae9775;
+  --color-coffee-600: #9A7F5E;
+  --color-coffee-700: #7D6347;
+  --color-coffee-800: #5E4A34;
+  --color-coffee-900: #3D2F1F;
+  --color-coffee-950: #22180E;
+
+  /* Blue accent */
+  --color-accent: #4F7DF3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #ae9775; }
+::-webkit-scrollbar-thumb:hover { background: #9A7F5E; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.96) translateY(12px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+.animate-float      { animation: float   3s   ease-in-out infinite; }
+.animate-fade-in    { animation: fadeIn  0.3s ease-out forwards; }
+.animate-modal-in   { animation: modalIn 0.3s ease-out forwards; }
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Tree connector lines */
+.tree-line {
+  position: relative;
+}
+.tree-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  width: 24px;
+  height: 1px;
+  background: #ae9775;
+}
