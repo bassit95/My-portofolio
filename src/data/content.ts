@@ -9,7 +9,7 @@ export const personalInfo = {
   github: "https://github.com/bassit95",
   linkedin: "https://linkedin.com/in/abdoulbassit",
   whatsapp: "https://wa.me/2250160922912",
-  cvPath: "/images/developpeur front-end.pdf",
+  cvPath: "images/developpeur front-end.pdf",
   heroDescription:
     "Fullstack developer based in Ivory Coast, passionate about crafting modern, performant web applications — from sleek frontends to robust backends. Currently studying Networks & IT Security at Université Virtuelle de Côte d'Ivoire.",
     
@@ -161,7 +161,7 @@ export const certifications = [
       {
         name: "Introduction to Software Engineering",
         link: "https://coursera.org/share/1e5eaebef198b80fbe2d1c82a5e87292",
-        image: "/images/ibm-software-engineering.png", // Placez l'image dans public/images/
+        image: "images/ibm-software-engineering.png", // Placez l'image dans public/images/
       },
       /* Pour ajouter un autre certificat IBM, il suffit de rajouter un objet ici :
       {
@@ -184,12 +184,12 @@ export const certifications = [
       {
         name: " badge junior-cybersecurity ",
         link: "https://www.credly.com/users/bassitabimbola/edit/badges/credly",
-        image: "/images/junior-cybersecurity-analyst-career-path.1.png",
+        image: "images/junior-cybersecurity-analyst-career-path.1.png",
       },
       {
         name: " badge  ",
         link: "https://www.credly.com/users/bassitabimbola/edit/badges/credly",
-        image: "/images/network-technician-career-path.png",
+        image: "images/network-technician-career-path.png",
       },
     ],
   },
@@ -218,7 +218,7 @@ export const projects = [
     ],
     github: "https://github.com/bassit95/",
     demo: "https:///bassit95.github.io/FoodLeroy",
-    image: "/images/foodleroy.png"
+    image: "images/foodleroy.png"
   },
   {
     id: "foody",
@@ -232,8 +232,8 @@ export const projects = [
       "Déploiement sur GitHub Pages"
     ],
     github: "https://github.com/bassit95",
-    demo: "https://bassit95.github.io/foody/",
-    image: "/images/foody.png"
+    demo: "https://bassit95.github.io/Foody/",
+    image: "images/foody.png"
   },
   // Exemple d'ajout d'un 3ème projet :
   {
@@ -249,7 +249,7 @@ export const projects = [
     ],
     github: "https://github.com/bassit95/myProjetFood",
     demo:  "https://bassit95.github.io/roginio/",
-    image: "/images/roginio.png"
+    image: "images/roginio.png"
   },
   {
     id: "Quiz-culture",
@@ -264,7 +264,7 @@ export const projects = [
     ],
      github: "https://github.com/bassit95",
     demo:  "https://bassit95.github.io/QuizCult/",
-    image: "/images/cultureQuiz.png"
+    image: "images/cultureQuiz.png"
       },
   {
     id: "Classix",
@@ -279,7 +279,7 @@ export const projects = [
     ],
      github: "https://github.com/bassit95",
     demo:  "https:/bassit95.github.io/Classix/",
-    image: "/images/classix.png"
+    image: "images/classix.png"
       },
   {
     id: "Roginio v2",
@@ -295,7 +295,7 @@ export const projects = [
     ],
     github: "https://github.com/votre-user/mon-projet",
     demo: "https://roginio-v2.vercel.app/",
-    image: "/images/roginioV2.png"
+    image: "images/roginioV2.png"
   }
 ];
 export const filterCategories = ["Tous", "HTML / CSS / JS", "React / Next.js", "Fullstack"];

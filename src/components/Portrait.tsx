@@ -36,7 +36,7 @@ export default function Portrait() {
           >
             <div className="absolute -inset-4 blur-2xl" style={{ backgroundColor: "rgba(174,151,117,0.12)" }} />
             <div className="relative overflow-hidden shadow-2xl border-4" style={{ borderColor: "rgba(174,151,117,0.25)" }}>
-              <img src="/images/823a1d86-ff03-4a7a-9b09-8212775d950c.jpg" alt="Abdoul Bassit Portrait" className="w-full h-[500px] object-cover" />
+              <img src="images/823a1d86-ff03-4a7a-9b09-8212775d950c.jpg" alt="Abdoul Bassit Portrait" className="w-full h-[500px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
             </div>
             <div className="absolute -top-6 -right-6 w-24 h-24 grid grid-cols-6 gap-1 opacity-30">

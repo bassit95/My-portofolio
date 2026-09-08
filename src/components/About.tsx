@@ -184,12 +184,12 @@ export default function About() {
           </div>
 
           {/* Stats row */}
-          <AnimatedSection>
+          {/* <AnimatedSection>
             <div className="grid grid-cols-3 border border-gray-200">
               {[
-                { num: "5+",   label: "Projets réalisés" },
-                { num: "2+",   label: "Ans d'expérience" },
-                { num: "100%", label: "Satisfaction client" },
+                { num: "2+",   label: "Projets réalisés" },
+                { num: "+",   label: "Ans d'expérience" },
+                // { num: "100%", label: "Satisfaction client" },
               ].map((stat, i) => (
                 <div
                   key={stat.label}
@@ -200,7 +200,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </AnimatedSection>
+          </AnimatedSection> */}
         </div>
       </div>
     </section>

@@ -1,3 +1,122 @@
+// import React, { useState } from "react";
+// import { Send } from "lucide-react";
+// import { useTheme } from "@/context/ThemeContext";
+// import { personalInfo } from "@/data/content";
+
+// export default function Contact() {
+//   const { theme } = useTheme();
+//   const dark = theme === "dark";
+
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     subject: "",
+//     message: "",
+//   });
+
+//   const handleChange = (
+//     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+//   ) => {
+//     setFormData({ ...formData, [e.target.name]: e.target.value });
+//   };
+
+//   const handleSubmit = (e: React.FormEvent) => {
+//     e.preventDefault();
+
+//     // 1. Nettoyer le numéro de téléphone (conserver uniquement les chiffres)
+//     // Ex: "+225 07 00 00 00 00" -> "2250700000000"
+//     const phoneNumber = personalInfo.phone.replace(/[^0-9]/g, "");
+
+//     // 2. Formatage du message pour WhatsApp
+//     const text = `Bonjour Abdoul,\n\n` +
+//       `*Nom:* ${formData.name}\n` +
+//       `*Email:* ${formData.email}\n` +
+//       `*Sujet:* ${formData.subject}\n\n` +
+//       `*Message:*\n${formData.message}`;
+
+//     // 3. Encodage du texte pour l'URL
+//     const encodedText = encodeURIComponent(text);
+
+//     // 4. Redirection vers l'API WhatsApp
+//     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+//     window.open(whatsappUrl, "_blank");
+//   };
+
+//   return (
+//     <section
+//       id="contact"
+//       className={`py-20 px-6 transition-colors duration-500 ${
+//         dark ? "bg-coffee-900 text-white" : "bg-gray-50 text-gray-900"
+//       }`}
+//     >
+//       <div className="max-w-3xl mx-auto">
+//         <h2 className="text-3xl font-black mb-2 text-center">Me Contacter</h2>
+//         <p className="text-center text-sm mb-8 opacity-80">
+//           Envoyez-moi un message, cela ouvrira directement une discussion WhatsApp avec le contenu pré-rempli.
+//         </p>
+
+//         <form onSubmit={handleSubmit} className="space-y-4">
+//           <div className="grid md:grid-cols-2 gap-4">
+//             <input
+//               type="text"
+//               name="name"
+//               placeholder="Votre nom"
+//               required
+//               value={formData.name}
+//               onChange={handleChange}
+//               className={`w-full p-3 rounded-lg border text-sm focus:outline-none focus:ring-2 focus:ring-[#ae9775] ${
+//                 dark ? "bg-coffee-950 border-coffee-800 text-white" : "bg-white border-gray-300"
+//               }`}
+//             />
+//             <input
+//               type="email"
+//               name="email"
+//               placeholder="Votre email"
+//               required
+//               value={formData.email}
+//               onChange={handleChange}
+//               className={`w-full p-3 rounded-lg border text-sm focus:outline-none focus:ring-2 focus:ring-[#ae9775] ${
+//                 dark ? "bg-coffee-950 border-coffee-800 text-white" : "bg-white border-gray-300"
+//               }`}
+//             />
+//           </div>
+
+//           <input
+//             type="text"
+//             name="subject"
+//             placeholder="Sujet du message"
+//             required
+//             value={formData.subject}
+//             onChange={handleChange}
+//             className={`w-full p-3 rounded-lg border text-sm focus:outline-none focus:ring-2 focus:ring-[#ae9775] ${
+//               dark ? "bg-coffee-950 border-coffee-800 text-white" : "bg-white border-gray-300"
+//             }`}
+//           />
+
+//           <textarea
+//             name="message"
+//             rows={5}
+//             placeholder="Votre message..."
+//             required
+//             value={formData.message}
+//             onChange={handleChange}
+//             className={`w-full p-3 rounded-lg border text-sm focus:outline-none focus:ring-2 focus:ring-[#ae9775] ${
+//               dark ? "bg-coffee-950 border-coffee-800 text-white" : "bg-white border-gray-300"
+//             }`}
+//           />
+
+//           <button
+//             type="submit"
+//             className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold py-3.5 px-6 rounded-lg transition-all active:scale-95"
+//           >
+//             Envoyer via WhatsApp <Send size={16} />
+//           </button>
+//         </form>
+//       </div>
+//     </section>
+//   );
+// }
+
 import { Mail, MapPin, Phone, ArrowUp } from "lucide-react";
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/BrandIcons";
 import { useTheme } from "@/context/ThemeContext";

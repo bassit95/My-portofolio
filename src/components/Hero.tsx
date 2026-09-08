@@ -17,7 +17,7 @@ export default function Hero() {
 
      <div className="absolute bottom-0 right-0 z-0 h-full w-[min(58vw,760px)] pointer-events-none select-none">
   <img
-    src="/images/hero-avatar.png"
+    src="images/hero-avatar.png"
     alt="Abdoul Bassit"
     /*  MODIFICATION ICI : remplacez object-top par object-[center_20%] ou object-[center_10%] */
     className="absolute inset-0 h-full w-full object-cover object-[center_30%] drop-shadow-[0_24px_50px_rgba(0,0,0,0.35)]"
