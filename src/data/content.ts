@@ -238,7 +238,7 @@ export const projects = [
   // Exemple d'ajout d'un 3ème projet :
   {
     id: "roginio",
-    title: "roginio",
+    title: "rania",
     category:  "HTML / CSS / JS", // Doit correspondre à une catégorie de filterCategories
     description: "Plateforme moderne de commande et de découverte de meuble de luxe.",
     stack:  ["HTML", "CSS", "JavaScript"],
@@ -283,7 +283,7 @@ export const projects = [
       },
   {
     id: "Roginio v2",
-    title: "Mon Premiere React.js",
+    title: "ROGINIO",
     category: "React / Next.js", // Doit correspondre à une catégorie de filterCategories
     description: "Plateforme SaaS développée avec React.js et Tailwind CSS.",
     stack: ["React.js", "Tailwind CSS"],
@@ -293,9 +293,27 @@ export const projects = [
       "srtucturer et belle archictecture",
       "deploiement sur Vercel"
     ],
-    github: "https://github.com/votre-user/mon-projet",
+    github: "https://github.com/bassit95",
     demo: "https://roginio-v2.vercel.app/",
     image: "images/roginioV2.png"
+  },
+  {
+    id: "Africa-global",
+    title: "AFRICA-GLOBAL",
+    category: "React / Next.js , Fullstack", // Doit correspondre à une catégorie de filterCategories
+    description: "Plateforme de decouverte de contenu africain développée avec React.js et Tailwind CSS , Laravel et MySQL.",
+    stack: ["React.js", "Tailwind CSS , Laravel ,MysQL"],
+    features: [
+      "Authentification utilisateur",
+      "Paiement Stripe",
+      "srtucturer et belle archictecture",
+      "deploiement sur Vercel"
+    ],
+    github: "https://github.com/bassit95",
+    demo: "https://afr-g-lobe.vercel.app/", 
+
+
+    image: "images/afr.png"
   }
 ];
 export const filterCategories = ["Tous", "HTML / CSS / JS", "React / Next.js", "Fullstack"];
