@@ -34,10 +34,19 @@ export const stackCategories = [
         name: "React.js",
         icon: "React",
       },
+      {
+        name: "Next.js",
+        icon: "Next",
+      },
 
       {
         name: "JavaScript",
         icon: "JavaScript",
+      },
+
+      {
+        name: "TypeScript",
+        icon: "TypeScript",
       },
 
       {
@@ -77,10 +86,18 @@ export const stackCategories = [
         name: "PHP",
         icon: "PHP",
       },
+      {
+        name: "Express.js",
+        icon: "Express",
+      },
 
       {
         name: "MySQL",
         icon: "MySQL",
+      },
+      {
+        name: "MongoDB",
+        icon: "MongoDB",
       },
     ],
   },
@@ -144,14 +161,14 @@ export const certifications = [
     issuer: "UVCI — Université Virtuelle de Côte d'Ivoire",
     year: "2024–2025",
     description:
-      "Licence 2 – Réseaux et Sécurité Informatique. Protocoles réseau, cybersécurité, administration système.",
+      "Licence 3 – Réseaux et Sécurité Informatique. Protocoles réseau, cybersécurité, administration système.",
     icon: "GraduationCap",
     tags: ["Réseaux", "Cybersécurité", "Linux", "TCP/IP"],
   },
   {
     title: "IBM Full-Stack JS Developer",
     issuer: "Coursera — IBM",
-    year: "2025",
+    year: "2026",
     description:
       "IBM Full-Stack JavaScript Developer Professional Certificate. HTML, JS, React JS, Git, GitHub.",
     icon: "Award",
@@ -204,7 +221,47 @@ export const certifications = [
   },
 ];
 
+
+
+
+
 export const projects = [
+
+{
+    id: "Roginio v2",
+    title: "ROGINIO",
+    category: "React / Next.js", // Doit correspondre à une catégorie de filterCategories
+    description: "Plateforme SaaS développée avec React.js et Tailwind CSS.",
+    stack: ["React.js", "Tailwind CSS"],
+    features: [
+      "Authentification utilisateur",
+      "Paiement Stripe",
+      "srtucturer et belle archictecture",
+      "deploiement sur Vercel"
+    ],
+    github: "https://github.com/bassit95",
+    demo: "https://roginio-v2.vercel.app/",
+    image: "images/roginioV2.png"
+  },
+
+   
+ {
+    id: "Africa-global",
+    title: "AFRICA-GLOBAL",
+    category: "Fullstack", // Corrigé ici pour correspondre exactement au filtre
+    description: "Plateforme de decouverte de contenu africain développée avec React.js et Tailwind CSS , Laravel et MySQL.",
+    stack: ["React.js", "Tailwind CSS", "Laravel", "MySQL", "Fullstack"],
+    features: [
+      "Authentification utilisateur",
+      "Paiement Stripe",
+      "Structure et belle architecture",
+      "Déploiement sur Vercel"
+    ],
+    github: "https://github.com/bassit95",
+    demo: "https://afr-g-lobe.vercel.app/", 
+    image: "images/afr.png"
+  },
+
   {
     id: "foodleroy",
     title: "FoodLeroy",
@@ -281,39 +338,6 @@ export const projects = [
     demo:  "https:/bassit95.github.io/Classix/",
     image: "images/classix.png"
       },
-  {
-    id: "Roginio v2",
-    title: "ROGINIO",
-    category: "React / Next.js", // Doit correspondre à une catégorie de filterCategories
-    description: "Plateforme SaaS développée avec React.js et Tailwind CSS.",
-    stack: ["React.js", "Tailwind CSS"],
-    features: [
-      "Authentification utilisateur",
-      "Paiement Stripe",
-      "srtucturer et belle archictecture",
-      "deploiement sur Vercel"
-    ],
-    github: "https://github.com/bassit95",
-    demo: "https://roginio-v2.vercel.app/",
-    image: "images/roginioV2.png"
-  },
-  {
-    id: "Africa-global",
-    title: "AFRICA-GLOBAL",
-    category: "React / Next.js , Fullstack", // Doit correspondre à une catégorie de filterCategories
-    description: "Plateforme de decouverte de contenu africain développée avec React.js et Tailwind CSS , Laravel et MySQL.",
-    stack: ["React.js", "Tailwind CSS , Laravel ,MysQL"],
-    features: [
-      "Authentification utilisateur",
-      "Paiement Stripe",
-      "srtucturer et belle archictecture",
-      "deploiement sur Vercel"
-    ],
-    github: "https://github.com/bassit95",
-    demo: "https://afr-g-lobe.vercel.app/", 
-
-
-    image: "images/afr.png"
-  }
+ 
 ];
 export const filterCategories = ["Tous", "HTML / CSS / JS", "React / Next.js", "Fullstack"];
